@@ -26,8 +26,7 @@ jobs:
           distribution: "temurin"
 
       - name: Use Node.js 18
-        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # 
-v3
+        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
         with:
           node-version: 18.18.2
 
