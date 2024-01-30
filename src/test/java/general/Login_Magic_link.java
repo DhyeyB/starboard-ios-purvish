@@ -158,6 +158,7 @@ public class Login_Magic_link
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
 			
 			driver = new  IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
+			WebDriverWait wait = new WebDriverWait(driver, 50);
 
 			System.out.println(" Application Installed ");
 			driver.findElement(By.id("Allow")).click();
