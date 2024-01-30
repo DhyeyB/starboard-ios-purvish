@@ -69,7 +69,7 @@ jobs:
           cd
           ls
           ls -la .appium/node_modules/appium-xcuitest-driver/node_modules/
-          xcodebuild -project .appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id='${{ steps.udid-ios-simulator.outputs.udid }}' test -allowProvisioningUpdates
+          xcodebuild -project .appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id='${{ steps.udid-ios-simulator.outputs.udid }}' test -allowProvisioningUpdates 2>&1 &
           appium > appium.log 2>&1 &
           ls -la
              
