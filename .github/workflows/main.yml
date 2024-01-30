@@ -59,14 +59,17 @@ jobs:
         id: udid-ios-simulator
         uses: futureware-tech/simulator-action@v3
         with:
-            model: 'iPhone 14 Pro Max'
+            model: 'iPhone 15 Pro Max'
             # os: 'iOS'
             # udid: "704210AC-CBDA-470A-AAEA-46F68DD733EB"
 
       - name: Start Appium Server
         run: |
           # appium --help
-          appium > appium.log 2>&1 &
+          cd
+          ls
+          ls -la .appium/node_modules/appium-xcuitest-driver/node_modules/
+          # appium > appium.log 2>&1 &
           ls -la
              
 
@@ -74,22 +77,22 @@ jobs:
       #   with:
       #     xcode-version: 14.3.1
 
-      - name: Run Appium Tests
-        run: mvn clean test -Dudid=${{ steps.udid-ios-simulator.outputs.udid }}
+      # - name: Run Appium Tests
+      #   run: mvn clean test -Dudid=${{ steps.udid-ios-simulator.outputs.udid }}
 
-      - name: Upload Appium Logs
-        if: always()
-        uses: actions/upload-artifact@master
-        with:
-          name: appium-logs
-          path: |
-            appium.log
+      # - name: Upload Appium Logs
+      #   if: always()
+      #   uses: actions/upload-artifact@master
+      #   with:
+      #     name: appium-logs
+      #     path: |
+      #       appium.log
 
-      - name: upload app
-        if: always()
-        continue-on-error: true
-        uses: actions/upload-artifact@master
-        with:
-          name: Debugging-SS
-          path: |
-            ./target/allure-results
+      # - name: upload app
+      #   if: always()
+      #   continue-on-error: true
+      #   uses: actions/upload-artifact@master
+      #   with:
+      #     name: Debugging-SS
+      #     path: |
+      #       ./target/allure-results
