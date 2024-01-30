@@ -158,11 +158,13 @@ public class Login_Magic_link
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard login activity
 			
 			driver = new  IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
-			
+
+			System.out.println(" Application Installed ");
 			driver.findElement(By.id("Allow")).click();
 
-
+			System.out.println(" clicked on allow ");
 			String magic_link = new send_request().sendRequest();
+			System.out.println(" req sent for magic link ");
 			
 			//driver.activateApp("com.apple.mobilesafari");
 			
