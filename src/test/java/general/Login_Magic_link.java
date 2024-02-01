@@ -131,6 +131,7 @@ public class Login_Magic_link
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
+			cap.setCapability("autoAcceptAlerts", true);
 																															// login
 																															// activity
 
