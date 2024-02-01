@@ -22,8 +22,8 @@ import io.qameta.allure.Allure;
 
 import java.sql.Timestamp;
 
-//public class Invite_Crew extends Login_Magic_link
-public class Invite_Crew extends Base
+public class Invite_Crew extends Login_Magic_link
+//public class Invite_Crew extends Base
 
 {
 
