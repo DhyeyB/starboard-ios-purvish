@@ -17,7 +17,7 @@ import io.qameta.allure.Allure;
 
 import java.sql.Timestamp;
 
-//public class Linking_Transactions extends Login_test {
+//public class Linking_Transactions extends Login_Magic_link {
 public class Linking_Transactions extends Base {
 
 	@Test(priority = 1)
@@ -35,15 +35,10 @@ public class Linking_Transactions extends Base {
 			// Click on Transactions
 
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Transactions\"]")).click();
-
-			System.out.println("**********---------- Clicked on Transactions    **********----------");
-
 			// Confirm that You are on Transactions screen if you are getting text as
 			// TRANSACTIONS
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"TRANSACTIONS\"]")));
-			System.out.println(
-					"**********---------- Confirm that You are on Transactions screen    **********----------");
 
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
@@ -104,14 +99,10 @@ public class Linking_Transactions extends Base {
 
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Transactions\"]")).click();
 
-			System.out.println("**********---------- Clicked on Transactions    **********----------");
-
 			// Confirm that You are on Transactions screen if you are getting text as
 			// TRANSACTIONS
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"TRANSACTIONS\"]")));
-			System.out.println(
-					"**********---------- Confirm that You are on Transactions screen    **********----------");
 
 			// Click on 1st transaction from the list
 			wait.until(ExpectedConditions
@@ -171,14 +162,10 @@ public class Linking_Transactions extends Base {
 
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Transactions\"]")).click();
 
-			System.out.println("**********---------- Clicked on Transactions    **********----------");
-
 			// Confirm that You are on Transactions screen if you are getting text as
 			// TRANSACTIONS
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"TRANSACTIONS\"]")));
-			System.out.println(
-					"**********---------- Confirm that You are on Transactions screen    **********----------");
 
 			// Click on 1st transaction from the list
 			wait.until(ExpectedConditions

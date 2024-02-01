@@ -27,7 +27,7 @@ import io.appium.java_client.remote.MobilePlatform;
 import io.qameta.allure.Allure;
 import util.send_request;
 
-public class Login_Magic_link
+public class Test_file
 
 {
 
@@ -79,20 +79,34 @@ public class Login_Magic_link
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
 
+			System.out.println("**********----------  Got the set pin screen    **********----------");
+
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")).click();
+			System.out.println("**********----------  Clicked on 1    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")).click();
+			System.out.println("**********----------  Clicked on 2    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"3\"]")).click();
+			System.out.println("**********----------  Clicked on 3    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"4\"]")).click();
+			System.out.println("**********----------  Clicked on 4    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")).click();
+			System.out.println("**********----------  Clicked on 5    **********----------");
 
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
 
+			System.out.println("**********----------  Confirm set pin screen    **********----------");
+
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")).click();
+			System.out.println("**********----------  Clicked on 1    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")).click();
+			System.out.println("**********----------  Clicked on 2    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"3\"]")).click();
+			System.out.println("**********----------  Clicked on 3    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"4\"]")).click();
+			System.out.println("**********----------  Clicked on 4    **********----------");
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")).click();
+			System.out.println("**********----------  Clicked on 5    **********----------");
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]")))
 					.click();
@@ -122,12 +136,13 @@ public class Login_Magic_link
 
 		{
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
-			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14 Pro Max");
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 15 Pro Max");
 			cap.setCapability("automationName", "XCUITest");
-			//cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263");
-			 cap.setCapability("udid", System.getProperty("udid"));
-			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app");
-			cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard.app");
+			cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263");
+			// cap.setCapability("udid", System.getProperty("udid"));
+			cap.setCapability("app",
+					"/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app");
+			// cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard.app");
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
@@ -140,12 +155,19 @@ public class Login_Magic_link
 			System.out.println(" Application Installed ");
 			driver.findElement(By.id("Allow")).click();
 
+			System.out.println(" clicked on allow ");
+
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]")))
 					.click();
+			System.out.println(" clicked on skip ");
 
 			String magic_link = new send_request().sendRequest();
+			System.out.println(" req sent for magic link ");
+
+			// driver.activateApp("com.apple.mobilesafari");
 
 			driver.navigate().to(magic_link);
+			System.out.println(" clicked on magic link");
 
 		}
 
@@ -169,8 +191,11 @@ public class Login_Magic_link
 	public void TearDown() throws Exception
 
 	{
+		// driver.terminateApp("com.google.android.gm");
 
-		driver.terminateApp("com.impossible-research.sandbox.Starboard");
+		Reporter.log("==========Gmail Application closed==========", true);
+
+		// driver.terminateApp("com.impossible_research.sandbox.starboard");
 
 		Reporter.log("==========Starboard Application closed==========", true);
 

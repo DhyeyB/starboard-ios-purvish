@@ -16,8 +16,8 @@ import io.qameta.allure.Allure;
 
 import java.sql.Timestamp;
 
-//public class Add_Location extends Login_test {
-public class Add_Location extends Base {
+public class Add_Location extends Login_Magic_link {
+//public class Add_Location extends Base {
 
 	@Test(priority = 1)
 	private static void Update_location() throws Exception {
@@ -34,41 +34,30 @@ public class Add_Location extends Base {
 
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Transactions\"]")).click();
 
-			System.out.println("**********---------- Clicked on Transactions    **********----------");
-
 			// Confirm that You are on Transactions screen if you are getting text as
 			// TRANSACTIONS
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"TRANSACTIONS\"]")));
-			System.out.println(
-					"**********---------- Confirm that You are on Transactions screen    **********----------");
 
-			// Click on 1st transaction from the list
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(
-			// By.xpath("//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]"))).click();
-			// //already have address
+			// already have address
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeCollectionView/XCUIElementTypeCell[5]")))
-					.click(); // blank address
+					.click();
 
-			System.out.println("**********---------- Click on 1st transaction from the list    **********----------");
-
+			// Blank address
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
 			// Click on Add/Edit Location
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Add/Edit Location\"]")))
 					.click();
-			System.out.println("**********---------- Click on Add/Edit Location    **********----------");
-
+			// You are on Add/Edit Location page
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Location\"]")));
-			System.out.println("**********---------- You are on Add/Edit Location page    **********----------");
 
 			MobileElement company_field = driver.findElement(By.xpath("(//*[@index=1])[5]"));
 
 			String test = driver.findElement(By.xpath("(//*[@index=1])[5]")).getText();
-			System.out.println("**********----------" + test + "**********----------");
 
 			if (!test.equals("Company Name")) {
 
@@ -78,8 +67,6 @@ public class Add_Location extends Base {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[5]")));
 				driver.findElement(By.xpath("(//*[@index=1])[5]")).sendKeys("BS" + " " + timestamp);
 
-				System.out.println("**********---------- Company name updated **********----------");
-
 				// Clicked on Final save button
 				driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Done\"]")).click();
 
@@ -87,7 +74,6 @@ public class Add_Location extends Base {
 
 				wait.until(ExpectedConditions
 						.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Export\"]")));
-				System.out.println("**********---------- Add location updated **********----------");
 			}
 
 			else
@@ -100,8 +86,6 @@ public class Add_Location extends Base {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[5]")));
 
 				driver.findElement(By.xpath("(//*[@index=1])[5]")).sendKeys("BS" + " " + timestamp);
-
-				System.out.println("**********---------- Company name updated **********----------");
 
 				// Address 1
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=2])[3]")));
@@ -130,8 +114,6 @@ public class Add_Location extends Base {
 
 				wait.until(ExpectedConditions
 						.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Export\"]")));
-				System.out.println("**********---------- Add location Added successfully **********----------");
-
 			}
 		}
 

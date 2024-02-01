@@ -15,7 +15,7 @@ import io.qameta.allure.Allure;
 
 import org.testng.Assert;
 
-//public class Setting_Yacht extends Login_test
+//public class Setting_Yacht extends Login_Magic_link
 public class Setting_Yacht extends Base {
 	public TextReport report = new TextReport();
 
@@ -64,7 +64,7 @@ public class Setting_Yacht extends Base {
 
 			WebDriverWait wait_sync = new WebDriverWait(driver, 20);
 
-			WebElement Sync_data2 = wait.until(ExpectedConditions
+			wait_sync.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Last All Data Sync\"]")));
 
 		}

@@ -18,7 +18,7 @@ import io.qameta.allure.Allure;
 
 import java.sql.Timestamp;
 
-//public class More_Module extends Login_test
+//public class More_Module extends Login_Magic_link
 public class More_Module extends Base
 
 {
@@ -126,8 +126,8 @@ public class More_Module extends Base
 
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
-
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
 
 			// Click on More
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")).click();
@@ -138,46 +138,45 @@ public class More_Module extends Base
 			driver.findElement(By.xpath("(//*[@index=1])[6]")).click();
 
 			// Confirm that You are on Add POs screen if you are getting text as Add
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]")));
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]")));
 
 			// Add PO button
-			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]"))
-					.click();
+			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]")).click();
 
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
 			// Add PO title name
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"(//*[@index=2])[3]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=2])[3]"))).click();
 
-			driver.findElement(By.xpath(
-					"(//*[@index=2])[3]"))
-					.sendKeys("PO" + " " + timestamp);
+			driver.findElement(By.xpath("(//*[@index=2])[3]")).sendKeys("PO" + " " + timestamp);
 
 			// Click on Link Supplier
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Supplier\"]"))).click();
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Supplier\"]"))).click();
 
 			// Selected on 1st supplier
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]"))).click();// 
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+					"//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]")))
+					.click();//
 
 			// Clicked on save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
-		
 			// clicked on Total
-			wait.until(
-					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(
+					By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]"))).click();
 
 			// Total amount is entered as 99
-			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]")).sendKeys("99");
+			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]"))
+					.sendKeys("99");
 
 			// Clicked on Final save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Purchase Orders\"]")));
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Purchase Orders\"]")));
 
 		}
 
@@ -202,7 +201,8 @@ public class More_Module extends Base
 
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
 
 			// Click on More
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")).click();
@@ -211,12 +211,11 @@ public class More_Module extends Base
 			driver.findElement(By.xpath("(//*[@index=1])[8]")).click();
 
 			// Confirm that You are on Add Invoice screen if you are getting text as Add
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"//XCUIElementTypeStaticText[@name=\"Add\"]")));
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]")));
 
 			// Click on Add Invoice button
-			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]"))
-					.click();
+			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]")).click();
 
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
@@ -234,28 +233,26 @@ public class More_Module extends Base
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Supplier\"]")).click();
 
 			// Selected on 1st supplier
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[5]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[5]"))).click();
 
 			// Clicked on save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
 			// clicked on Total
-			wait.until(
-					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(
+					By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]"))).click();
 
 			// Total amount is entered as 99
-			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]")).sendKeys("99");
+			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]"))
+					.sendKeys("99");
 
 			// Clicked on Final save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Done\"]")).click();
-			
-			// Clicked on Final save button
-						driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("(//*[@index=1])[8]")));
+			// Clicked on Final save button
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[8]")));
 
 		}
 
@@ -281,8 +278,9 @@ public class More_Module extends Base
 
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
-			
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
+
 			// Click on More
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")).click();
 
@@ -291,13 +289,14 @@ public class More_Module extends Base
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Quotes\"]"))).click();
 
 			// Confirm that You are on Add Quotes screen if you are getting text as Add
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]"))).click();
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]"))).click();
 
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
 			// Add Quotes name
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[1]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(
+					By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[1]"))).click();
 
 			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[1]"))
 					.sendKeys("QT" + " " + timestamp);
@@ -312,19 +311,18 @@ public class More_Module extends Base
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
 			// clicked on Total
-			wait.until(
-					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(
+					By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]"))).click();
 
 			// Total amount is entered as 99
-			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]")).sendKeys("99");
-			
+			driver.findElement(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTextField[2]"))
+					.sendKeys("99");
 
 			// Clicked on Final save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Done\"]")).click();
-			
+
 			// Clicked on Final save button
-						driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Quotes\"]")));
@@ -353,30 +351,26 @@ public class More_Module extends Base
 
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
-			
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
+
 			// Click on More
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")).click();
-			
+
 			// Print Projects
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Projects\"]"))).click();
 
 			// Confirm that You are on Add Projects screen if you are getting text as Add
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"//XCUIElementTypeStaticText[@name=\"Add\"]"))).click();
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]"))).click();
 
-			
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
 			// Add Projects name
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"//XCUIElementTypeTextField")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeTextField"))).click();
 
-			driver.findElement(By.xpath(
-					"//XCUIElementTypeTextField"))
-					.sendKeys("PJ" + " " + timestamp);
+			driver.findElement(By.xpath("//XCUIElementTypeTextField")).sendKeys("PJ" + " " + timestamp);
 
 			// Click onDescription
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Description\"]")).click();
@@ -384,29 +378,25 @@ public class More_Module extends Base
 
 			// Description added
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=3])[1]"))).click();
-			
+
 			System.out.println("**********---------- Click on Description field    **********----------");
-			
-		
+
 			driver.findElement(By.xpath("(//*[@index=3])[1]")).sendKeys("Project Description added by scrpit");
-			
+
 			System.out.println("**********---------- Description data added.    **********----------");
-			
-			
+
 			// Clicked on Done button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Done\"]")).click();
-			
+
 			// Clicked on save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
 
 			// Click on Project Category
 			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("(//XCUIElementTypeImage[@name=\"Right\"])[2]")))
-					.click();
+					.visibilityOfElementLocated(By.xpath("(//XCUIElementTypeImage[@name=\"Right\"])[2]"))).click();
 
 			// Selected on 1st projects Category
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[6]")))
-					.click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[6]"))).click();
 
 			// Clicked on save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
@@ -472,7 +462,9 @@ public class More_Module extends Base
 					.visibilityOfElementLocated(By.xpath("(//XCUIElementTypeImage[@name=\"Right\"])[2]"))).click();
 
 			// Click on 1st APA from list
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]"))).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+					"//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]")))
+					.click();
 
 			// Clicked on project save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
@@ -482,7 +474,9 @@ public class More_Module extends Base
 					.visibilityOfElementLocated(By.xpath("(//XCUIElementTypeImage[@name=\"Right\"])[3]"))).click();
 
 			// Click on 1st project from list
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]"))).click();//
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+					"//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]")))
+					.click();//
 
 			// Clicked on project save button
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
@@ -523,6 +517,74 @@ public class More_Module extends Base
 
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"None Found.\"]")));
+
+		}
+
+		catch (Exception e)
+
+		{
+			Allure.addAttachment("AllureSelenide",
+					new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+			Assert.fail(e.getMessage());
+
+		}
+
+	}
+
+	@Test(priority = 7)
+
+	public static void Expense_category() throws Exception
+
+	{
+		try
+
+		{
+			Home();
+
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")));
+
+			// Click on More
+			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"More\"]")).click();
+
+			// wait for exp category
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=1])[9]")));
+
+			// Click on exp category
+			driver.findElement(By.xpath("(//*[@index=1])[9]")).click();
+
+			// Confirm that You are on Add Exp category screen if you are getting text as
+			// Add
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Add\"]"))).click();
+
+			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+
+			// Add exp category name
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeTextField"))).click();
+
+			driver.findElement(By.xpath("//XCUIElementTypeTextField")).sendKeys("exp_cat" + " " + timestamp);
+
+			// Click onDescription
+			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Description\"]")).click();
+
+			// Description added
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=3])[1]"))).click();
+
+			driver.findElement(By.xpath("(//*[@index=3])[1]")).sendKeys("Expense category Description added by scrpit");
+
+			// Clicked on Done button
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Done\"]")).click();
+
+			// Clicked on save button
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")).click();
+
+			// Clicked on Final save button
+			wait.until(
+					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Save\"]")))
+					.click();
 
 		}
 
