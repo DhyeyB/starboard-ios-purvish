@@ -131,15 +131,15 @@ public class Login_Magic_link
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
-			cap.setCapability("autoAcceptAlerts", true);
-																															// login
-																															// activity
+			// cap.setCapability("autoAcceptAlerts", true);
+			capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
 			WebDriverWait wait = new WebDriverWait(driver, 50);
 
 			System.out.println(" Application Installed ");
-			driver.findElement(By.id("Allow")).click();
+			// driver.findElement(By.id("Allow")).click();
+
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]")))
 					.click();
