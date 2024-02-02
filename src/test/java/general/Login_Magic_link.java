@@ -126,7 +126,7 @@ public class Login_Magic_link
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14 Pro Max");
 			cap.setCapability("automationName", "XCUITest");
 			//cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263");
-			 cap.setCapability("udid", System.getProperty("udid"));
+			cap.setCapability("udid", System.getProperty("udid"));
 			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app");
 			cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard.app");
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess

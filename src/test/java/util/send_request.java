@@ -22,6 +22,7 @@ public class send_request extends Login_Magic_link {
 		try {
 			generate_header obj = new generate_header();
 			String email_token = obj.run();
+			@SuppressWarnings("deprecation")
 			URL url = new URL(
 					"https://starboard-api.dev.starboardcard.dexteraparte.com/api/v1/user/automation-login-link");
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
