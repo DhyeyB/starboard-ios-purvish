@@ -23,6 +23,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import io.qameta.allure.Allure;
 import util.send_request;
