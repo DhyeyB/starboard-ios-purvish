@@ -2,7 +2,7 @@ name: Appium CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ["dhyey"]
 
 jobs:
   build:
