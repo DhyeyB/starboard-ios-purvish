@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 719.624 s <<< FAILURE! - in TestSuite
+general.Linking_Transactions.Link_Invoice  Time elapsed: 56.755 s  <<< FAILURE!
+java.lang.AssertionError: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeButton[@name="Save"] (tried for 30 second(s) with 500 milliseconds interval)
+	at general.Linking_Transactions.Link_Invoice(Linking_Transactions.java:79)
+
+general.More_Module.Projects  Time elapsed: 62.653 s  <<< FAILURE!
+java.lang.AssertionError: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Apples-MBP-2', ip: 'fe80:0:0:0:40f:bbdc:f93b:a90b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6.4', java.version: '21.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/apple/Library/Develo..., appActivity: com.impossible-research.san..., appPackage: com.impossible-research.san..., autoAcceptAlerts: true, automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 15 Pro Max, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 2D8F97C4-F4B4-40FA-92EF-36F..., webStorageEnabled: false}
+Session ID: 9077707e-99c1-4030-8cb7-8e5aa45e3c48
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name="Save"]}
+	at general.More_Module.Projects(More_Module.java:419)
+

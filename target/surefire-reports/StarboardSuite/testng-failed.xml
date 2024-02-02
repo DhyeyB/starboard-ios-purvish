@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [StarboardSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Starboard_test_cases(failed)" verbose="0">
+    <classes>
+      <class name="general.More_Module">
+        <methods>
+          <include name="Projects"/>
+          <include name="TearDown"/>
+          <include name="LoginTOApplication"/>
+        </methods>
+      </class> <!-- general.More_Module -->
+      <class name="general.Linking_Transactions">
+        <methods>
+          <include name="TearDown"/>
+          <include name="LoginTOApplication"/>
+          <include name="Link_Invoice"/>
+        </methods>
+      </class> <!-- general.Linking_Transactions -->
+    </classes>
+  </test> <!-- Starboard_test_cases(failed) -->
+</suite> <!-- Failed suite [StarboardSuite] -->
