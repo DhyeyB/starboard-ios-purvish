@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[==========Application closed==========]]>
+      <![CDATA[==========Gmail Application closed==========]]>
+    </line>
+    <line>
+      <![CDATA[==========Starboard Application closed==========]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-02-01T18:27:06 IST" name="StarboardSuite" finished-at="2024-02-01T18:27:36 IST" duration-ms="29572">
+  <suite started-at="2024-02-02T14:59:28 IST" name="StarboardSuite" finished-at="2024-02-02T14:59:28 IST" duration-ms="14">
     <groups>
     </groups>
-    <test started-at="2024-02-01T18:27:06 IST" name="Starboard_test_cases" finished-at="2024-02-01T18:27:36 IST" duration-ms="29572">
-      <class name="general.Base">
-        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Base@2fb5fe30]" started-at="2024-02-01T18:26:32 IST" name="LoginTOApplication" finished-at="2024-02-01T18:27:06 IST" duration-ms="33634" status="PASS">
+    <test started-at="2024-02-02T14:59:28 IST" name="Starboard_test_cases" finished-at="2024-02-02T14:59:28 IST" duration-ms="14">
+      <class name="general.Test_file">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Test_file@45673f68]" started-at="2024-02-02T14:54:21 IST" name="LoginTOApplication" finished-at="2024-02-02T14:59:28 IST" duration-ms="306769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTOApplication -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Base@2fb5fe30]" started-at="2024-02-01T18:27:36 IST" name="TearDown" finished-at="2024-02-01T18:27:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Test_file@45673f68]" started-at="2024-02-02T14:59:28 IST" name="TearDown" finished-at="2024-02-02T14:59:28 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[==========Application closed==========]]>
+              <![CDATA[==========Gmail Application closed==========]]>
+            </line>
+            <line>
+              <![CDATA[==========Starboard Application closed==========]]>
             </line>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- general.Base -->
-      <class name="general.More_Module">
-        <test-method signature="Expense_category()[pri:7, instance:general.More_Module@23cd4ff2]" started-at="2024-02-01T18:27:06 IST" name="Expense_category" finished-at="2024-02-01T18:27:36 IST" duration-ms="29430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Expense_category -->
-      </class> <!-- general.More_Module -->
+      </class> <!-- general.Test_file -->
     </test> <!-- Starboard_test_cases -->
   </suite> <!-- StarboardSuite -->
 </testng-results>

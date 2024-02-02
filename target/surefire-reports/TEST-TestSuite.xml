@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="64.557" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="309.77" tests="0" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter11039615074156762321.jar /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire 2024-02-01T18-26-30_613-jvmRun1 surefire6962989730363283663tmp surefire_06147189440818044818tmp"/>
+    <property name="sun.java.command" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter6568973413519626986.jar /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire 2024-02-02T14-54-16_197-jvmRun1 surefire415651460563623685tmp surefire_06463298911248689720tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/test-classes:/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/classes:/Users/apple/.m2/repository/io/appium/java-client/7.6.0/java-client-7.6.0.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/apple/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/apple/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/apple/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/apple/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/apple/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/apple/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/apple/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/apple/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/apple/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/apple/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/apple/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/apple/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/Users/apple/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/apple/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/apple/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/apple/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/apple/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/apple/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/apple/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/apple/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/apple/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/apple/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/apple/.m2/repository/com/github/automatedowl/allure-environment-writer/1.0.0/allure-environment-writer-1.0.0.jar:/Users/apple/.m2/repository/com/codeborne/selenide/5.25.0/selenide-5.25.0.jar:/Users/apple/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/apple/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/Users/apple/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/apple/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/apple/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/apple/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1/httpclient5-5.1.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.1/httpcore5-5.1.1.jar:/Users/apple/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/apple/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/apple/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/apple/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/Users/apple/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/apple/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/apple/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/apple/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-testng/2.15.0/allure-testng-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-test-filter/2.15.0/allure-test-filter-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-selenide/2.17.3/allure-selenide-2.17.3.jar:/Users/apple/.m2/repository/org/aspectj/aspectjweaver/1.9.8.RC1/aspectjweaver-1.9.8.RC1.jar:/Users/apple/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter11039615074156762321.jar"/>
+    <property name="surefire.real.class.path" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter6568973413519626986.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.1"/>
@@ -59,89 +59,4 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Expense_category" classname="general.More_Module" time="29.511">
-    <system-out><![CDATA[**********----------     Starboard app opened    **********----------
-Installed App found
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //XCUIElementTypeStaticText[@name="Enter your 5 digit pin."] (tried for 10 second(s) with 500 milliseconds interval)
-**********---------- Click on Description   **********----------
-**********---------- Click on Description field    **********----------
-**********---------- Description data added.    **********----------
-]]></system-out>
-    <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [TestRunner] Running the tests in 'Starboard_test_cases' with parallel mode:none
-[main] INFO org.testng.internal.Utils - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@5f577419 priority: 10
-[main] INFO org.testng.internal.Utils - [TestClass] Creating TestClass for [ClassImpl class=general.Base]
-[main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.LoginTOApplication()
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 9 ms.
-[main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.TearDown()
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [TestClass] Creating TestClass for [ClassImpl class=general.More_Module]
-[main] INFO org.testng.internal.Utils - [TestClass] Adding method More_Module.Expense_category()[pri:7, instance:null] on TestClass class general.More_Module
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.Expense_category()
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Keeping method Base.LoginTOApplication()[pri:0, instance:general.Base@2fb5fe30] for class null
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Invoking @BeforeSuite Base.LoginTOApplication()[pri:0, instance:general.Base@2fb5fe30]
-Feb 01, 2024 6:26:49 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-[main] INFO org.testng.internal.Utils - [SuiteRunner] Created 1 TestRunners
-[main] INFO org.testng.internal.Utils - [TestRunner] Running test Starboard_test_cases on 2  classes,  included groups:[] excluded groups:[]
-[main] INFO org.testng.TestClass - ===== Test class
-general.Base
-[main] INFO org.testng.TestClass - ======
-[main] INFO org.testng.TestClass - ===== Test class
-general.More_Module
-[main] INFO org.testng.TestClass -     @Test More_Module.Expense_category()[pri:7, instance:general.More_Module@23cd4ff2]
-[main] INFO org.testng.TestClass - ======
-[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] No configuration methods found
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] No configuration methods found
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Invoking general.More_Module.Expense_category
-]]></system-err>
-  </testcase>
 </testsuite>

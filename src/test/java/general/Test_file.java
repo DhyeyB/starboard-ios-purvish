@@ -22,6 +22,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import io.qameta.allure.Allure;
@@ -146,16 +147,15 @@ public class Test_file
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
-																															// login
-																															// activity
+			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
 			WebDriverWait wait = new WebDriverWait(driver, 50);
 
 			System.out.println(" Application Installed ");
-			driver.findElement(By.id("Allow")).click();
+			//driver.findElement(By.id("Allow")).click();
 
-			System.out.println(" clicked on allow ");
+			//System.out.println(" clicked on allow ");
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]")))
 					.click();
