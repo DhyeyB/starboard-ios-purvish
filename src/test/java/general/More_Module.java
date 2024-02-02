@@ -18,8 +18,8 @@ import io.qameta.allure.Allure;
 
 import java.sql.Timestamp;
 
-//public class More_Module extends Login_Magic_link
-public class More_Module extends Base
+public class More_Module extends Login_Magic_link
+//public class More_Module extends Base
 
 {
 

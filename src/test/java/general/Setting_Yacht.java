@@ -15,8 +15,8 @@ import io.qameta.allure.Allure;
 
 import org.testng.Assert;
 
-//public class Setting_Yacht extends Login_Magic_link
-public class Setting_Yacht extends Base {
+public class Setting_Yacht extends Login_Magic_link
+//public class Setting_Yacht extends Base {
 	public TextReport report = new TextReport();
 
 	@Test(priority = 1)

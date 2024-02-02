@@ -15,8 +15,8 @@ import io.qameta.allure.Allure;
 
 import java.sql.Timestamp;
 
-//public class Setting_Preference extends Login_Magic_link {
-public class Setting_Preference extends Base {
+public class Setting_Preference extends Login_Magic_link {
+//public class Setting_Preference extends Base {
 
 	@Test(priority = 1)
 	private static void Preference() throws Exception
