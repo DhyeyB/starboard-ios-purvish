@@ -75,8 +75,8 @@ public class Base
 
 			if (div1.isDisplayed()) {
 
-				// driver.executeScript("mobile:enrollBiometric", ImmutableMap.of("isEnabled",
-				// true));
+				driver.executeScript("mobile:enrollBiometric", ImmutableMap.of("isEnabled",
+				 true));
 
 				driver.executeScript("mobile:sendBiometricMatch", ImmutableMap.of("type", "faceId", "match", true));
 

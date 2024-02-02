@@ -3,13 +3,6 @@
 <suite name="Failed suite [StarboardSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Starboard_test_cases(failed)" verbose="0">
     <classes>
-      <class name="general.More_Module">
-        <methods>
-          <include name="Projects"/>
-          <include name="TearDown"/>
-          <include name="LoginTOApplication"/>
-        </methods>
-      </class> <!-- general.More_Module -->
       <class name="general.Linking_Transactions">
         <methods>
           <include name="TearDown"/>
@@ -17,6 +10,12 @@
           <include name="Link_Invoice"/>
         </methods>
       </class> <!-- general.Linking_Transactions -->
+      <class name="general.Base">
+        <methods>
+          <include name="TearDown"/>
+          <include name="LoginTOApplication"/>
+        </methods>
+      </class> <!-- general.Base -->
     </classes>
   </test> <!-- Starboard_test_cases(failed) -->
 </suite> <!-- Failed suite [StarboardSuite] -->
