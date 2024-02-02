@@ -133,7 +133,7 @@ public class Login_Magic_link
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
 			// cap.setCapability("autoAcceptAlerts", true);
-			capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
+			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
 			WebDriverWait wait = new WebDriverWait(driver, 50);
