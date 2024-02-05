@@ -72,7 +72,7 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver, 10);
+			WebDriverWait wait = new WebDriverWait(driver, 20);
 
 			System.out.println("Installed App found and it is on Enter new PIN screen");
 
@@ -126,8 +126,8 @@ public class Login_Magic_link
 			cap.setCapability("automationName", "XCUITest");
 			//cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263");
 			cap.setCapability("udid", System.getProperty("udid"));
-			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app");
-			cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard.app");
+			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard_old.app");
+			cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard_old.app");
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
