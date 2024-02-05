@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.121" tests="3" errors="0" skipped="2" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.381" tests="3" errors="0" skipped="2" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter17547608828825879231.jar /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire 2024-02-02T18-45-07_022-jvmRun1 surefire14024021086335079760tmp surefire_02530787805237060897tmp"/>
+    <property name="sun.java.command" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter394694267261497733.jar /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire 2024-02-05T15-44-06_243-jvmRun1 surefire2608445314187760510tmp surefire_09811549359449696624tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/test-classes:/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/classes:/Users/apple/.m2/repository/io/appium/java-client/7.6.0/java-client-7.6.0.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/apple/.m2/repository/com/google/code/gson/gson/2.8.8/gson-2.8.8.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/apple/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/apple/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/apple/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/apple/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/apple/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/apple/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/apple/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/apple/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/apple/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/apple/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/apple/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/Users/apple/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/Users/apple/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/apple/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/apple/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/apple/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/apple/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/apple/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/apple/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/apple/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/apple/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/apple/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/apple/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/apple/.m2/repository/com/github/automatedowl/allure-environment-writer/1.0.0/allure-environment-writer-1.0.0.jar:/Users/apple/.m2/repository/com/codeborne/selenide/5.25.0/selenide-5.25.0.jar:/Users/apple/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/apple/.m2/repository/io/github/bonigarcia/webdrivermanager/5.0.3/webdrivermanager-5.0.3.jar:/Users/apple/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/apple/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/apple/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/apple/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1/httpclient5-5.1.jar:/Users/apple/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.1/httpcore5-5.1.1.jar:/Users/apple/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/apple/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/apple/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/apple/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/Users/apple/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/apple/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/apple/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/apple/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-testng/2.15.0/allure-testng-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-test-filter/2.15.0/allure-test-filter-2.15.0.jar:/Users/apple/.m2/repository/io/qameta/allure/allure-selenide/2.17.3/allure-selenide-2.17.3.jar:/Users/apple/.m2/repository/org/aspectj/aspectjweaver/1.9.8.RC1/aspectjweaver-1.9.8.RC1.jar:/Users/apple/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter17547608828825879231.jar"/>
+    <property name="surefire.real.class.path" value="/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire/surefirebooter394694267261497733.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.1"/>
@@ -59,26 +59,26 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="LoginTOApplication" classname="general.Login_Magic_link" time="10.662">
+  <testcase name="LoginTOApplication" classname="general.Login_Magic_link" time="5.934">
     <failure message="Cannot invoke &quot;io.appium.java_client.ios.IOSDriver.getPageSource()&quot; because &quot;general.Login_Magic_link.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
-	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:157)
+	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:156)
 ]]></failure>
-    <system-out><![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/app/Starboard.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
+    <system-out><![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Apples-MBP-2', ip: 'fe80:0:0:0:40f:bbdc:f93b:a90b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6.4', java.version: '21.0.1'
+System info: host: 'Apples-MBP-2', ip: 'fe80:0:0:0:1061:f160:48a7:e8cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6.4', java.version: '21.0.1'
 Driver info: driver.version: IOSDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/app/Starboard.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Simulator architecture is unsupported by the '/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
     at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/errors.js:1097:9)
     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/protocol/protocol.js:491:57)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Apples-MBP-2', ip: 'fe80:0:0:0:40f:bbdc:f93b:a90b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6.4', java.version: '21.0.1'
+System info: host: 'Apples-MBP-2', ip: 'fe80:0:0:0:1061:f160:48a7:e8cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6.4', java.version: '21.0.1'
 Driver info: driver.version: IOSDriver
 ]]></system-out>
     <system-err><![CDATA[[main] INFO org.testng.internal.Utils - [TestRunner] Running the tests in 'Starboard_test_cases' with parallel mode:none
 [main] INFO org.testng.internal.Utils - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@5f577419 priority: 10
 [main] INFO org.testng.internal.Utils - [TestClass] Creating TestClass for [ClassImpl class=general.Login_Magic_link]
 [main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.LoginTOApplication()
-[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
+[main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
 [main] INFO org.testng.internal.Utils - [XmlMethodSelector] Including method general.TearDown()
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
@@ -132,20 +132,20 @@ Driver info: driver.version: IOSDriver
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 [main] INFO org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Keeping method Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@6e92c6ad] for class null
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Invoking @BeforeSuite Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@6e92c6ad]
+[main] INFO org.testng.internal.Utils - [Invoker 666988784] Keeping method Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@5baaae4c] for class null
+[main] INFO org.testng.internal.Utils - [Invoker 666988784] Invoking @BeforeSuite Login_Magic_link.LoginTOApplication()[pri:0, instance:general.Login_Magic_link@5baaae4c]
 [main] INFO org.testng.internal.Utils - Failed to invoke configuration method general.Login_Magic_link.LoginTOApplication:Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
-[main] ERROR io.qameta.allure.AllureLifecycle - Could not update test container: container with uuid d65f1824-d243-46bc-9058-1191fc36e774 not found
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not update test container: container with uuid 138e467d-8da5-4c74-a8e7-959dd6090760 not found
 ]]></system-err>
   </testcase>
   <testcase name="TearDown" classname="general.Login_Magic_link" time="0">
     <skipped/>
     <system-out><![CDATA[===== Invoked methods
-    Invite_Crew.sent_invite()[pri:1, instance:general.Invite_Crew@5b5caf08]
+    Invite_Crew.sent_invite()[pri:1, instance:general.Invite_Crew@400d912a]
 =====
 FAILED CONFIGURATION: @BeforeSuite LoginTOApplication
 java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
-	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:157)
+	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:156)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -170,7 +170,7 @@ java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriv
 
 SKIPPED: sent_invite
 java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
-	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:157)
+	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:156)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -206,8 +206,8 @@ java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriv
 [main] INFO org.testng.internal.Utils - [[Utils]] Attempting to create /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire-reports/StarboardSuite/Starboard_test_cases.xml
 [main] INFO org.testng.internal.Utils - [[Utils]]   Directory /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire-reports/StarboardSuite exists: true
 [main] INFO org.testng.internal.Utils - Creating /Users/apple/Desktop/dhyey_clone/starboard-ios-purvish/target/surefire-reports/StarboardSuite/Starboard_test_cases.xml
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Keeping method Login_Magic_link.TearDown()[pri:0, instance:general.Login_Magic_link@6e92c6ad] for class null
-[main] INFO org.testng.internal.Utils - [Invoker 666988784] Skipping @AfterSuite Login_Magic_link.TearDown()[pri:0, instance:general.Login_Magic_link@6e92c6ad]
+[main] INFO org.testng.internal.Utils - [Invoker 666988784] Keeping method Login_Magic_link.TearDown()[pri:0, instance:general.Login_Magic_link@5baaae4c] for class null
+[main] INFO org.testng.internal.Utils - [Invoker 666988784] Skipping @AfterSuite Login_Magic_link.TearDown()[pri:0, instance:general.Login_Magic_link@5baaae4c]
 ]]></system-err>
   </testcase>
   <testcase name="sent_invite" classname="general.Invite_Crew" time="0">
@@ -219,9 +219,9 @@ general.Login_Magic_link
 [main] INFO org.testng.TestClass - ======
 [main] INFO org.testng.TestClass - ===== Test class
 general.Invite_Crew
-[main] INFO org.testng.TestClass -     @Test Invite_Crew.sent_invite()[pri:1, instance:general.Invite_Crew@5b5caf08]
+[main] INFO org.testng.TestClass -     @Test Invite_Crew.sent_invite()[pri:1, instance:general.Invite_Crew@400d912a]
 [main] INFO org.testng.TestClass - ======
-[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 15 ms.
+[main] INFO org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 48 ms.
 [main] INFO org.testng.internal.Utils - [Invoker 666988784] No configuration methods found
 [main] INFO org.testng.internal.Utils - [Invoker 666988784] No configuration methods found
 ]]></system-err>

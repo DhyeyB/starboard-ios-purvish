@@ -2,19 +2,19 @@
 <testng-results ignored="2" total="3" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T18:45:20 IST" name="StarboardSuite" finished-at="2024-02-02T18:45:20 IST" duration-ms="164">
+  <suite started-at="2024-02-05T15:44:13 IST" name="StarboardSuite" finished-at="2024-02-05T15:44:13 IST" duration-ms="103">
     <groups>
     </groups>
-    <test started-at="2024-02-02T18:45:20 IST" name="Starboard_test_cases" finished-at="2024-02-02T18:45:20 IST" duration-ms="164">
+    <test started-at="2024-02-05T15:44:13 IST" name="Starboard_test_cases" finished-at="2024-02-05T15:44:13 IST" duration-ms="103">
       <class name="general.Login_Magic_link">
-        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@6e92c6ad]" started-at="2024-02-02T18:45:10 IST" name="LoginTOApplication" finished-at="2024-02-02T18:45:19 IST" duration-ms="8971" status="FAIL">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@5baaae4c]" started-at="2024-02-05T15:44:09 IST" name="LoginTOApplication" finished-at="2024-02-05T15:44:13 IST" duration-ms="4296" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
-at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:157)
+at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:156)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -42,20 +42,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTOApplication -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@6e92c6ad]" started-at="2024-02-02T18:45:20 IST" name="TearDown" finished-at="2024-02-02T18:45:20 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@5baaae4c]" started-at="2024-02-05T15:44:14 IST" name="TearDown" finished-at="2024-02-05T15:44:14 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- general.Login_Magic_link -->
       <class name="general.Invite_Crew">
-        <test-method signature="sent_invite()[pri:1, instance:general.Invite_Crew@5b5caf08]" started-at="2024-02-02T18:45:20 IST" name="sent_invite" finished-at="2024-02-02T18:45:20 IST" duration-ms="0" status="SKIP">
+        <test-method signature="sent_invite()[pri:1, instance:general.Invite_Crew@400d912a]" started-at="2024-02-05T15:44:13 IST" name="sent_invite" finished-at="2024-02-05T15:44:13 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
-at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:157)
+at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:156)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
