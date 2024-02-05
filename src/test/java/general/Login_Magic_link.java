@@ -22,8 +22,8 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import io.qameta.allure.Allure;
 import util.send_request;
@@ -75,7 +75,7 @@ public class Login_Magic_link
 
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 
-			System.out.println("Installed App found");
+			System.out.println("Installed App found and it is on Enter new PIN screen");
 
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
@@ -132,15 +132,13 @@ public class Login_Magic_link
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
-			// cap.setCapability("autoAcceptAlerts", true);
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
-			WebDriverWait wait = new WebDriverWait(driver, 50);
+			WebDriverWait wait = new WebDriverWait(driver, 100);
 
-			System.out.println(" Application Installed ");
-			// driver.findElement(By.id("Allow")).click();
-
+			System.out.println(" Application Installed & Allow permission has been given ");
+			
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]")))
 					.click();
