@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[==========Starboard Application closed==========]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-02-05T16:54:04 IST" name="StarboardSuite" finished-at="2024-02-05T16:54:36 IST" duration-ms="32035">
+    <groups>
+    </groups>
+    <test started-at="2024-02-05T16:54:04 IST" name="Starboard_test_cases" finished-at="2024-02-05T16:54:36 IST" duration-ms="32035">
+      <class name="general.Login_Magic_link">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@41a6d121]" started-at="2024-02-05T16:49:08 IST" name="LoginTOApplication" finished-at="2024-02-05T16:54:04 IST" duration-ms="296421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTOApplication -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@41a6d121]" started-at="2024-02-05T16:54:36 IST" name="TearDown" finished-at="2024-02-05T16:54:37 IST" duration-ms="1089" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==========Starboard Application closed==========]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- general.Login_Magic_link -->
+      <class name="general.Invite_Crew">
+        <test-method signature="sent_invite()[pri:1, instance:general.Invite_Crew@7a94b64e]" started-at="2024-02-05T16:54:04 IST" name="sent_invite" finished-at="2024-02-05T16:54:36 IST" duration-ms="31896" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name="Settings"] (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name="Settings"] (tried for 20 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:110)
+at general.Invite_Crew.sent_invite(Invite_Crew.java:107)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sent_invite -->
+      </class> <!-- general.Invite_Crew -->
+    </test> <!-- Starboard_test_cases -->
+  </suite> <!-- StarboardSuite -->
+</testng-results>
