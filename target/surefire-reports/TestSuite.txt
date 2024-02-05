@@ -1,20 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 48.454 s <<< FAILURE! - in TestSuite
-general.Base.LoginTOApplication  Time elapsed: 47.935 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeButton[@name="Home"] (tried for 10 second(s) with 500 milliseconds interval)
-	at general.Base.Home(Base.java:45)
-	at general.Base.LoginTOApplication(Base.java:98)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Apples-MBP-2', ip: 'fe80:0:0:0:40f:bbdc:f93b:a90b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.6.4', java.version: '21.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/apple/Library/Develo..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 15 Pro Max, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 2D8F97C4-F4B4-40FA-92EF-36F..., webStorageEnabled: false}
-Session ID: cb8c7eeb-4500-49ce-8ce7-dd1f64fdf689
-*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name="Home"]}
-	at general.Base.Home(Base.java:45)
-	at general.Base.LoginTOApplication(Base.java:98)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 11.121 s <<< FAILURE! - in TestSuite
+general.Login_Magic_link.LoginTOApplication  Time elapsed: 10.662 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "io.appium.java_client.ios.IOSDriver.getPageSource()" because "general.Login_Magic_link.driver" is null
+	at general.Login_Magic_link.LoginTOApplication(Login_Magic_link.java:157)
 

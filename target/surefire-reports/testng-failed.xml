@@ -3,19 +3,19 @@
 <suite name="Failed suite [StarboardSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Starboard_test_cases(failed)" verbose="0">
     <classes>
-      <class name="general.Linking_Transactions">
+      <class name="general.Invite_Crew">
         <methods>
-          <include name="TearDown"/>
-          <include name="LoginTOApplication"/>
-          <include name="Link_Invoice"/>
-        </methods>
-      </class> <!-- general.Linking_Transactions -->
-      <class name="general.Base">
-        <methods>
+          <include name="sent_invite"/>
           <include name="TearDown"/>
           <include name="LoginTOApplication"/>
         </methods>
-      </class> <!-- general.Base -->
+      </class> <!-- general.Invite_Crew -->
+      <class name="general.Login_Magic_link">
+        <methods>
+          <include name="TearDown"/>
+          <include name="LoginTOApplication"/>
+        </methods>
+      </class> <!-- general.Login_Magic_link -->
     </classes>
   </test> <!-- Starboard_test_cases(failed) -->
 </suite> <!-- Failed suite [StarboardSuite] -->
