@@ -79,20 +79,30 @@ public class Login_Magic_link
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
 
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"3\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"4\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"3\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"4\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]"))).click();
 
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
 
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"3\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"4\"]")).click();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"3\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"4\"]"))).click();
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]"))).click();
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]")))
 					.click();
