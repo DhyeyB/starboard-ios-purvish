@@ -57,7 +57,7 @@ public class Base
 		cap.setCapability("automationName", "XCUITest");
 		cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263");
 		cap.setCapability("app",
-				"/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard.app");
+				"/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard 4.app");
 		cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 
 		driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
@@ -69,16 +69,24 @@ public class Base
 		try {
 
 			System.out.println("Installed App found");
+			
+			WebElement div1 = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your 5 digit pin.\"]")));
+			
+			System.out.println("**********----------  Got the set pin screen    **********----------");
 
-			WebElement div1 = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your 5 digit pin.\"]")));
 
 			if (div1.isDisplayed()) {
+				
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]"))).click();
+				
+				//System.out.println("**********----------  Clicked on ok for fgace id   **********----------");
+				
+		        driver.executeScript("mobile:enrollBiometric", ImmutableMap.of("isEnabled", true));
+		       		        
+		        driver.executeScript("mobile:sendBiometricMatch", ImmutableMap.of("type", "faceId", "match", true));
 
-				driver.executeScript("mobile:enrollBiometric", ImmutableMap.of("isEnabled",
-				 true));
-
-				driver.executeScript("mobile:sendBiometricMatch", ImmutableMap.of("type", "faceId", "match", true));
+				System.out.println("**********----------  face id machted done   **********----------");
 
 				WebElement div = wait.until(
 						ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));

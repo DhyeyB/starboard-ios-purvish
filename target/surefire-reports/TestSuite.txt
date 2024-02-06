@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 97.83 s <<< FAILURE! - in TestSuite
-general.Invite_Crew.sent_invite  Time elapsed: 42.872 s  <<< FAILURE!
-java.lang.AssertionError: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name="Active"] (tried for 20 second(s) with 500 milliseconds interval)
-	at general.Invite_Crew.sent_invite(Invite_Crew.java:107)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 99.668 s - in TestSuite

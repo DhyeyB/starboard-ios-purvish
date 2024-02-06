@@ -78,9 +78,9 @@ public class Invite_Crew extends Login_Magic_link
 			driver.findElement(By.xpath("(//*[@index=7])[2]")).sendKeys("QA");
 
 			// Add First name
-			driver.findElement(By.xpath("(//*[@index=1])[17]")).click();
+			driver.findElement(By.xpath("(//*[@index=1])[15]")).click();
 
-			driver.findElement(By.xpath("(//*[@index=1])[17]")).sendKeys("Nia" + timestamp);
+			driver.findElement(By.xpath("(//*[@index=1])[15]")).sendKeys("Nia" + timestamp);
 
 			// Add Last name
 			driver.findElement(By.xpath("(//*[@index=3])[3]")).click();

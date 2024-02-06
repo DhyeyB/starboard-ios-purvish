@@ -106,6 +106,9 @@ public class send_request extends Login_Magic_link {
 
 			{
 				System.out.println("********************" + "Failed API" + "********************");
+				BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getResponseCode() / 100 == 2 ? connection.getInputStream() : connection.getErrorStream()));
+				System.out.println(reader);
+				System.out.println(reader.readLine());
 				System.out.println(connection.getResponseCode() + " else " + connection.getResponseMessage());
 			}
 

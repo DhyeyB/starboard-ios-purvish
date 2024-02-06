@@ -72,7 +72,7 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver, 20);
+			WebDriverWait wait = new WebDriverWait(driver, 100);
 
 			System.out.println("Installed App found and it is on Enter new PIN screen");
 
@@ -134,7 +134,7 @@ public class Login_Magic_link
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
-			WebDriverWait wait = new WebDriverWait(driver, 100);
+			WebDriverWait wait = new WebDriverWait(driver, 50);
 
 			System.out.println(" Application Installed & Allow permission has been given ");
 			
@@ -169,7 +169,7 @@ public class Login_Magic_link
 
 	{
 
-		driver.terminateApp("com.impossible-research.sandbox.Starboard");
+		//driver.terminateApp("com.impossible-research.sandbox.Starboard");
 
 		Reporter.log("==========Starboard Application closed==========", true);
 
