@@ -56,7 +56,7 @@ public class Invite_Crew extends Login_Magic_link
 					.click();
 			// Confirm that you are on Manage crew page
 			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Active\"]")));
+					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Manage Crew\"]")));
 
 			// Click on Add invite crew button
 			wait.until(ExpectedConditions.visibilityOfElementLocated(

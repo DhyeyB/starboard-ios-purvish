@@ -10,7 +10,7 @@ import com.google.gson.Gson;
 
 public class generate_header {
 
-	String plaintext = "pandyapurvish1708@gmail.com";
+	String plaintext = "purvish.pandya@bombaysoftwares.com";
 
 	public String getEmail() {
 		return plaintext;
