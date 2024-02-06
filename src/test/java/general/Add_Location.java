@@ -74,6 +74,8 @@ public class Add_Location extends Login_Magic_link {
 
 				wait.until(ExpectedConditions
 						.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Export\"]")));
+
+				System.out.println("*************** Location updated successfully ********");
 			}
 
 			else
@@ -114,6 +116,10 @@ public class Add_Location extends Login_Magic_link {
 
 				wait.until(ExpectedConditions
 						.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Export\"]")));
+				
+				System.out.println("*************** Location Added successfully ********");
+
+						
 			}
 		}
 

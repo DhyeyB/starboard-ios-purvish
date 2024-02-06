@@ -97,6 +97,8 @@ public class Invite_Crew extends Login_Magic_link
 			// Clicked on Send Magic link button
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Send Magic Link\"]")).click();
 
+			System.out.println("*************** Send Invite done successfully ********");
+
 		}
 
 		catch (Exception e)
