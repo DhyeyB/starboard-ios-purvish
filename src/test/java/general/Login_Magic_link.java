@@ -133,7 +133,7 @@ public class Login_Magic_link
 			cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard 4.app"); //server
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
-			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard
+			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard app activity
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
