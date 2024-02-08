@@ -98,7 +98,7 @@ public class Login_Magic_link
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
 					.click();
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]")))
+			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]")))
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@index=0])[15]"))).click();
 			wait.until(
