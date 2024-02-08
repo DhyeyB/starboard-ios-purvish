@@ -87,7 +87,7 @@ public class Login_Magic_link
 					.click();
 
 			// On Confirm your PIN page
-			wait.until(ExpectedConditions
+			//wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")))
 					.click();
