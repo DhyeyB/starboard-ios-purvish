@@ -40,11 +40,9 @@ public class Login_Magic_link
 	public static void Home() throws Exception
 
 	{
-
 		try
 
 		{
-
 			// Confirm that you are on Home screen
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			// Wait to load the screen For Home
@@ -72,43 +70,38 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver, 100);
-
+			WebDriverWait wait = new WebDriverWait(driver, 50);
 			System.out.println("Installed App found and it is on Enter new PIN screen");
-
+			// On Enter new PIN screen
 			wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
-
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"3\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"4\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]"))).click();
-
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
-
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"3\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"4\"]"))).click();
-			wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]"))).click();
-
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]")))
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"3\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"4\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
 					.click();
 
+			// On Confirm your PIN page
+			wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"3\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"4\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
+					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]")))
+					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@index=0])[15]"))).click();
-
 			wait.until(
 					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
 
@@ -134,9 +127,9 @@ public class Login_Magic_link
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14 Pro Max");
 			cap.setCapability("automationName", "XCUITest");
-			//cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263"); //local
+			//cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263"); // local
 			cap.setCapability("udid", System.getProperty("udid")); //server
-			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard 4.app"); //local
+			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard 4.app"); // local
 			cap.setCapability("app","/Users/runner/work/starboard-ios-purvish/starboard-ios-purvish/app/Starboard 4.app"); //server
 			cap.setCapability(MobileCapabilityType.NO_RESET, true); // It will always clear the cachess
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
@@ -145,15 +138,12 @@ public class Login_Magic_link
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
 			WebDriverWait wait = new WebDriverWait(driver, 50);
-
 			System.out.println(" Application Installed & Allow permission has been given ");
-			
-
+			// Click on SKIP
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]")))
 					.click();
-
+			// Magic link requested
 			String magic_link = new send_request().sendRequest();
-
 			driver.navigate().to(magic_link);
 
 		}
@@ -179,7 +169,7 @@ public class Login_Magic_link
 
 	{
 
-		//driver.terminateApp("com.impossible-research.sandbox.Starboard");
+		driver.terminateApp("com.impossible-research.sandbox.Starboard");
 
 		Reporter.log("==========Starboard Application closed==========", true);
 

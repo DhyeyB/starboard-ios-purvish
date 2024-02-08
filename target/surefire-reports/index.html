@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-StarboardSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-StarboardSuite" title="general.Invite_Crew" class="method navigator-link" hash-for-method="sent_invite">sent_invite</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-StarboardSuite" title="general.Invite_Crew" class="method navigator-link" hash-for-method="Sent_invite">Sent_invite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-StarboardSuite -->
@@ -127,9 +127,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sent_invite">
-                  </a> <!-- sent_invite -->
-                  <span class="method-name">sent_invite</span>
+                  <a name="Sent_invite">
+                  </a> <!-- Sent_invite -->
+                  <span class="method-name">Sent_invite</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +146,7 @@
 &lt;suite name=&quot;StarboardSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Starboard_test_cases&quot; verbose=&quot;10&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;general.Base&quot;/&gt;
+      &lt;class name=&quot;general.Login_Magic_link&quot;/&gt;
       &lt;class name=&quot;general.Invite_Crew&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Starboard_test_cases --&gt;
@@ -189,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sent_invite')
+data.setCell(0, 1, 'Sent_invite')
 data.setCell(0, 2, 'general.Invite_Crew')
-data.setCell(0, 3, 52119);
+data.setCell(0, 3, 55031);
 window.suiteTableData['StarboardSuite']= { tableData: data, tableDiv: 'times-div-StarboardSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-StarboardSuite">
               </div> <!-- times-div-StarboardSuite -->
             </div> <!-- times-div -->
@@ -231,7 +231,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">general.Base</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">general.Login_Magic_link</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">LoginTOApplication</span>
                 <span class="method-start">0 ms</span>
@@ -240,15 +240,15 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">general.Invite_Crew</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">sent_invite</span>
-                <span class="method-start">45413 ms</span>
+                <span class="method-name">Sent_invite</span>
+                <span class="method-start">52882 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">general.Base</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">general.Login_Magic_link</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">98037 ms</span>
+                <span class="method-start">108485 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

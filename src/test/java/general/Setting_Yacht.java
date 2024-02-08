@@ -28,44 +28,33 @@ public class Setting_Yacht extends Login_Magic_link {
 		{
 
 			Home();
-
 			WebDriverWait wait = new WebDriverWait(driver, 20);
-
 			WebElement Sync_data = wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Settings\"]")));
-
 			// Click on Settings
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Settings\"]")).click();
-
 			// Confirm that you are on Settings page
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("(//XCUIElementTypeStaticText[@name=\"Settings\"])[1]")));
-
 			// Print Yacht settings
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Yacht Settings\"]")))
 					.click();
-
 			// Confirm that you are on Yacht setting page by clicking on Sync Data
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Sync Data\"]"))).click();
-
 			// Confirm that you are on Sync Data page
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Sync Data\"]")));
-
 			// Click on Sync All button to Sync Data
 			WebElement Sync_data1 = wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Sync All Data\"]")));
-
-			String ActualTitle = Sync_data1.getText();
-
 			Sync_data1.click();
-
 			WebDriverWait wait_sync = new WebDriverWait(driver, 20);
-
 			wait_sync.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Last All Data Sync\"]")));
+
+			System.out.println("*************** Sync data updated successfully ********");
 
 		}
 

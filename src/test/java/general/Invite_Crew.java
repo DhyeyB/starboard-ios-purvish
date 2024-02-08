@@ -29,27 +29,22 @@ public class Invite_Crew extends Login_Magic_link
 
 	@SuppressWarnings("deprecation")
 	@Test(priority = 1)
-	public static void sent_invite() throws Exception {
+	public static void Sent_invite() throws Exception {
 
 		try
 
 		{
 			Home();
-
-			WebDriverWait wait = new WebDriverWait(driver, 20);
-
+			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Settings\"]")));
-
 			// Click on Settings
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Settings\"]")).click();
-
 			// Confirm that you are on Yacht Settings
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Yacht Settings\"]")));
-
+			// Click on Settings
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Yacht Settings\"]")).click();
-
 			// Click on Manage crew
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Manage Crew\"]")))
@@ -57,46 +52,31 @@ public class Invite_Crew extends Login_Magic_link
 			// Confirm that you are on Manage crew page
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Manage Crew\"]")));
-
 			// Click on Add invite crew button
 			wait.until(ExpectedConditions.visibilityOfElementLocated(
 					By.xpath("//XCUIElementTypeOther[@name=\"person.crop.circle.fill.badge.plus\"]"))).click();
-
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-
 			// Click on Enter Details button
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Enter Details\"]"))).click();
-
 			// Confirm that you are on Send Crew Request page
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath("//XCUIElementTypeStaticText[@name=\"Send Crew Request\"]")));
-
 			// Add Position name
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@index=7])[2]"))).click();
-
 			driver.findElement(By.xpath("(//*[@index=7])[2]")).sendKeys("QA");
-
 			// Add First name
-			driver.findElement(By.xpath("(//*[@index=1])[15]")).click();
-
-			driver.findElement(By.xpath("(//*[@index=1])[15]")).sendKeys("Nia" + timestamp);
-
+			driver.findElement(By.xpath("//XCUIElementTypeTextField")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeTextField")).sendKeys("Nia" + timestamp);
 			// Add Last name
 			driver.findElement(By.xpath("(//*[@index=3])[3]")).click();
-
 			driver.findElement(By.xpath("(//*[@index=3])[3]")).sendKeys("Shah" + timestamp);
-
 			// Add Email
 			driver.findElement(By.xpath("(//*[@index=5])[3]")).click();
-
 			String myEmailAddress = "purvish+" + System.nanoTime() + "@Gmail.com";
-
 			driver.findElement(By.xpath("(//*[@index=5])[3]")).sendKeys(myEmailAddress);
-
 			// Clicked on Send Magic link button
 			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Send Magic Link\"]")).click();
-
 			System.out.println("*************** Send Invite done successfully ********");
 
 		}
