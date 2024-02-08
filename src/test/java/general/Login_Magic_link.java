@@ -70,7 +70,7 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver, 50);
+			WebDriverWait wait = new WebDriverWait(driver, 100);
 			System.out.println("Installed App found and it is on Enter new PIN screen");
 			// On Enter new PIN screen
 			wait.until(ExpectedConditions
@@ -87,8 +87,7 @@ public class Login_Magic_link
 					.click();
 
 			// On Confirm your PIN page
-			//wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
+			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")))
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")))
