@@ -98,7 +98,7 @@ public class Login_Magic_link
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
 					.click();
-			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]"))).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]"))).click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@index=0])[15]"))).click();
 			wait.until(
 					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
@@ -135,11 +135,10 @@ public class Login_Magic_link
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
-			WebDriverWait wait = new WebDriverWait(driver, 50);
+			WebDriverWait wait = new WebDriverWait(driver, 100);
 			System.out.println(" Application Installed & Allow permission has been given ");
 			// Click on SKIP
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]")))
-					.click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]"))).click();
 			// Magic link requested
 			String magic_link = new send_request().sendRequest();
 			driver.navigate().to(magic_link);
