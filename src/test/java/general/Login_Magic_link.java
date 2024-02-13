@@ -135,7 +135,7 @@ public class Login_Magic_link
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
-			WebDriverWait wait = new WebDriverWait(driver, 100);
+			WebDriverWait wait = new WebDriverWait(driver, 50);
 			System.out.println(" Application Installed & Allow permission has been given ");
 			// Click on SKIP
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]"))).click();
