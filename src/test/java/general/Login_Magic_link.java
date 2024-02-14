@@ -85,6 +85,8 @@ public class Login_Magic_link
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
 					.click();
 
+			System.out.println("*************** First Five pin set successfully ********");
+
 			// On Confirm your PIN page
 			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Confirm your new PIN\"]")));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")))
@@ -101,6 +103,7 @@ public class Login_Magic_link
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@index=0])[15]"))).click();
 			wait.until(
 					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
+			System.out.println("*************** Login magic link has been worked successfully ********");
 
 		}
 
@@ -142,6 +145,7 @@ public class Login_Magic_link
 			// Magic link requested
 			String magic_link = new send_request().sendRequest();
 			driver.navigate().to(magic_link);
+			System.out.println("*************** Magic link has been sent successfully ********");
 
 		}
 
