@@ -5,16 +5,16 @@
       <![CDATA[==========Starboard Application closed==========]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-02-08T16:09:03 IST" name="StarboardSuite" finished-at="2024-02-08T16:09:59 IST" duration-ms="55531">
+  <suite started-at="2024-02-14T11:02:13 IST" name="StarboardSuite" finished-at="2024-02-14T11:03:00 IST" duration-ms="46924">
     <groups>
     </groups>
-    <test started-at="2024-02-08T16:09:03 IST" name="Starboard_test_cases" finished-at="2024-02-08T16:09:59 IST" duration-ms="55531">
+    <test started-at="2024-02-14T11:02:13 IST" name="Starboard_test_cases" finished-at="2024-02-14T11:03:00 IST" duration-ms="46924">
       <class name="general.Login_Magic_link">
-        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@7ff2b8d2]" started-at="2024-02-08T16:08:10 IST" name="LoginTOApplication" finished-at="2024-02-08T16:09:03 IST" duration-ms="52839" status="PASS">
+        <test-method is-config="true" signature="LoginTOApplication()[pri:0, instance:general.Login_Magic_link@7ff2b8d2]" started-at="2024-02-14T10:57:15 IST" name="LoginTOApplication" finished-at="2024-02-14T11:02:13 IST" duration-ms="298053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTOApplication -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@7ff2b8d2]" started-at="2024-02-08T16:09:59 IST" name="TearDown" finished-at="2024-02-08T16:09:59 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:general.Login_Magic_link@7ff2b8d2]" started-at="2024-02-14T11:03:00 IST" name="TearDown" finished-at="2024-02-14T11:03:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==========Starboard Application closed==========]]>
@@ -23,7 +23,7 @@
         </test-method> <!-- TearDown -->
       </class> <!-- general.Login_Magic_link -->
       <class name="general.Invite_Crew">
-        <test-method signature="Sent_invite()[pri:1, instance:general.Invite_Crew@40226788]" started-at="2024-02-08T16:09:03 IST" name="Sent_invite" finished-at="2024-02-08T16:09:58 IST" duration-ms="55031" status="PASS">
+        <test-method signature="Sent_invite()[pri:1, instance:general.Invite_Crew@40226788]" started-at="2024-02-14T11:02:13 IST" name="Sent_invite" finished-at="2024-02-14T11:02:59 IST" duration-ms="46239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Sent_invite -->
