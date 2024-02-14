@@ -48,7 +48,7 @@ public class Login_Magic_link
 			// Wait to load the screen For Home
 			WebElement div = wait.until(
 					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
-			// Print that You are on Home screen
+			// Click on Home screen
 			div.click();
 
 		} catch (Exception e)
@@ -70,10 +70,10 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver, 100);
+			WebDriverWait wait = new WebDriverWait(driver, 50);
 			System.out.println("Installed App found and it is on Enter new PIN screen");
 			// On Enter new PIN screen
-			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"1\"]")))
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"2\"]")))
@@ -135,10 +135,10 @@ public class Login_Magic_link
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
-			WebDriverWait wait = new WebDriverWait(driver,100);
+			WebDriverWait wait = new WebDriverWait(driver,50);
 			System.out.println(" Application Installed & Allow permission has been given ");
 			// Click on SKIP
-			//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]"))).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Skip\"]"))).click();
 			// Magic link requested
 			String magic_link = new send_request().sendRequest();
 			driver.navigate().to(magic_link);
