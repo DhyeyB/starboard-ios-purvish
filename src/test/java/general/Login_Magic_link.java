@@ -125,6 +125,7 @@ public class Login_Magic_link
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14 Pro Max");
 			cap.setCapability("automationName", "XCUITest");
+			cap.setCapability('appium:wdaLaunchTimeout': 120000),
 			//cap.setCapability("udid", "2D8F97C4-F4B4-40FA-92EF-36F53585E263"); // local
 			cap.setCapability("udid", System.getProperty("udid")); //server
 			//cap.setCapability("app","/Users/apple/Library/Developer/Xcode/DerivedData/testapp-eqlcjdspfzzjswgpsofjosqtsile/Build/Products/Debug-iphonesimulator/Starboard 4.app"); // local
@@ -133,6 +134,7 @@ public class Login_Magic_link
 			cap.setCapability("appPackage", "com.impossible-research.sandbox.Starboard"); // Starboard package name
 			cap.setCapability("appActivity", "com.impossible-research.sandbox.starboard.ui.splash.view.SplashActivity"); // Starboard app activity
 			cap.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
+			cap.setCapability('appium:wdaLaunchTimeout': 120000),
 
 			driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/"), cap);
 			WebDriverWait wait = new WebDriverWait(driver,50);
