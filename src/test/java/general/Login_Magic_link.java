@@ -99,7 +99,7 @@ public class Login_Magic_link
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
 					.click();
-			System.out.println("*************** Second Five pin set successfully ********");
+			System.out.println("*************** Second Five pin set successfully ***********");
 
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]"))).click();
 			
