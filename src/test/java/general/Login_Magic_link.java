@@ -107,7 +107,7 @@ public class Login_Magic_link
 			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
 			
-			System.out.println("*************** Login magic link has been worked successfully ********");
+			System.out.println("*************** Login magic link has been worked successfully *********");
 
 		}
 
