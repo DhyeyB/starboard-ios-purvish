@@ -6,7 +6,7 @@
 		
 		<!--class name="general.Base"/>-->
 		<class name="general.Login_Magic_link"/>
-		<!--class name="general.Invite_Crew"/>-->
+		<class name="general.Invite_Crew"/>
     	<class name="general.Add_Location"/>
     	<!--class name="general.Linking_Transactions"/>
       	<class name="general.Setting_Preference"/>
