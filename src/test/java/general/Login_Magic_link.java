@@ -145,7 +145,7 @@ public class Login_Magic_link
 			// Magic link requested
 			String magic_link = new send_request().sendRequest();
 			driver.navigate().to(magic_link);
-			System.out.println("*************** Magic link has been sent successfully ********");
+			System.out.println("*************** Magic link has been sent successfully *******");
 
 		}
 
