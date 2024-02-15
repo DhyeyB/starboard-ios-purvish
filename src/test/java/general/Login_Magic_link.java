@@ -70,7 +70,7 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver, 200);
+			WebDriverWait wait = new WebDriverWait(driver,100);
 			System.out.println("Installed App found and it is on Enter new PIN screen");
 			// On Enter new PIN screen
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
@@ -99,10 +99,14 @@ public class Login_Magic_link
 					.click();
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"5\"]")))
 					.click();
+			System.out.println("*************** Second Five pin set successfully ********");
+
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeButton[@name=\"Skip\"]"))).click();
+			
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@index=0])[15]"))).click();
-			wait.until(
-					ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
+			
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Home\"]")));
+			
 			System.out.println("*************** Login magic link has been worked successfully ********");
 
 		}
