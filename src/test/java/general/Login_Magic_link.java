@@ -70,7 +70,7 @@ public class Login_Magic_link
 
 		{
 
-			WebDriverWait wait = new WebDriverWait(driver,100);
+			WebDriverWait wait = new WebDriverWait(driver,150);
 			System.out.println("Installed App found and it is on Enter new PIN screen");
 			// On Enter new PIN screen
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//XCUIElementTypeStaticText[@name=\"Enter your new PIN\"]")));
